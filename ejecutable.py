@@ -25,7 +25,7 @@ class App:
 
     def set_output(self, txt):
         now = dt.datetime.now()
-        self.output_str.set(txt + " - Fecha de hoy: " + str(now.date()))
+        self.output_str.set(txt + "\nFecha y hora de hoy: " + now.strftime("%d/%m/%Y %I:%M %p"))
 
     def btn_callback(self):
         txt = self.get_txt(self.entry)
